@@ -5,6 +5,8 @@ Don't know about Arduino? Start here... https://www.arduino.cc/en/Guide/Introduc
 
 Hardware includes an Arduino Mega 2560, resistive touch screen shield, real-time clock, DHT (humidity/temperature sensor), and a lithium battery shield. Some more details about this are in the code comments.
 
+The way the result is supposed to look is that the touch screen has 4 dials on it (time, temp, humidity, and battery voltage) that act as summary graphics. The user can touch one of the dials to highlight it, and the lower part of the screen shows details for the selected dial.  In this way, the user can see kind of macro- and micro-level info at the same time as a multi-layered experience.
+
 This sketch combines timing with some variable comparisons (close to "protothreading") so that the linear code processing can update the info and listen for touch input "at the same time", while the device does not really look like it is beating itself to death.
 
 Many parts of this code are copy/pasted from other sources.
